@@ -1,23 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <header>
-    <a href="#" class="logo">Surya</a>
+    <title>Shrithis Surya P | Full Stack Web Developer</title>
+    <meta name="description"
+        content="Portfolio of Shrithis Surya P, a Full Stack Python Web Developer with experience in Flask, Django, JavaScript, MongoDB, and MySQL.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
 
-    <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
-      
-    </nav>
-   </header>
+    <!-- iziToast -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+    <!-- iziModal -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izimodal/css/iziModal.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+
+            <h1 class="preloader-title">Welcome To My Portfolio</h1>
+
+            <h2 class="preloader-name">
+                <span style="color: #FD5D51; font-size: 18px !important;">I'm</span>
+                Shrithis Surya
+            </h2>
+
+            <p class="preloader-role">Full Stack Developer</p>
+
+            <div class="loader-wrapper">
+                <div class="loader-percentage">
+                    <span id="loaderPercentage">0</span>%
+                </div>
+
+                <div class="loader-track">
+                    <div class="loader-progress" id="loaderProgress"></div>
+                </div>
+
+                <span class="loader-text">Loading portfolio...</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Shrithis Surya<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <div class="hero-content fade-up">
+                <p class="greeting">Hello, I'm Shrithis Surya</p>
+
+                <h2 class="role">
+                    Full Stack Web Developer building scalable digital solutions.
+                </h2>
+
+                <p class="summary">
+                    I develop scalable, responsive, and production-ready web applications
+                    using Python, Flask, Django, JavaScript, and modern web technologies. I specialize
+                    in backend development, REST APIs, database-driven applications, and
+                    responsive frontend experiences.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-up">
+                <div class="hero-image">
+                    <img src="static/images/myImages/suryaTwo.png" alt="Shrithis Surya P - Profile Picture">
+                    <img src="/static/images/myImages/suryaOne.png" alt="Shrithis Surya P">
+                    <img src="/static/images/myImages/suryaThree.jpg" alt="Shrithis Surya P">
+                    <img src="/static/images/myImages/suryaFour.jpg" alt="Shrithis Surya P">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <div class="section-heading fade-up">
+                <h2>About Me</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="about-content fade-up">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong>Shrithis Surya P</strong>, a passionate
+                        <strong>Full Stack Python Web Developer</strong> who enjoys turning
+                        ideas into modern, scalable, and user-friendly web applications.
+                        I work across both frontend and backend development, building
+                        complete digital experiences from the user interface to the server
+                        and database.
+                    </p>
+
+                    <p>
+                        My core expertise is in <strong>Python, Flask, Django, MongoDB, SQLite,
+                            JavaScript, HTML, CSS, Bootstrap, REST APIs</strong>, and modern
+                        web development practices. I enjoy designing clean interfaces,
+                        developing reliable backend systems, creating APIs, managing
+                        databases, and connecting frontend experiences with powerful
+                        backend functionality.
+                    </p>
+
+                    <p>
+                        Professionally, I have gained experience working with
+                        <strong>Mcube Infotech Private Limited</strong>, where I worked on
+                        Flask-based web architectures and real-world application
+                        development. This experience helped me strengthen my understanding
+                        of backend development, database management, API integration,
+                        debugging, and writing maintainable code.
+                    </p>
+
+                    <p>
+                        Alongside my professional experience, I have also been working as a
+                        <strong>freelance web developer</strong>, building websites and
+                        web solutions for real-world clients. I have successfully completed
+                        multiple freelance projects across different domains, working with
+                        clients to understand their requirements and transform their ideas
+                        into functional, responsive, and professional websites.
+                    </p>
+
+                    <p>
+                        What I enjoy most about development is the process of taking a
+                        problem, breaking it down into smaller pieces, and building a
+                        practical solution from scratch. I'm always interested in learning
+                        new technologies, improving my development skills, and finding
+                        better ways to create faster, cleaner, and more scalable
+                        applications.
+                    </p>
+
+                    <p>
+                        My goal is to continue growing as a <strong>Full Stack Developer</strong>,
+                        contribute to impactful products, collaborate with talented teams,
+                        and build digital experiences that create real value for businesses
+                        and users.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills container">
+            <div class="section-heading fade-up">
+                <h2>Skills & Technologies</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="skills-grid fade-up">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks & Tech</h3>
+                    <ul class="skill-list">
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>Bootstrap</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>MongoEngine</li>
+                        <li>SqLite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Postman</li>
+                        <li>Google Cloud</li>
+                        <li>MongoDB Atlas</li>
+                        <li>Docker</li>
+                        <li>Render</li>
+                        <li>Email Js</li>
+                        <li>Vercel</li>
+                        <li>Hostinger</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience container">
+            <div class="section-heading fade-up">
+                <h2>Work Experience</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="timeline fade-up">
+                <!-- Jms Artics -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Web Developer (Freelancing)</h3>
+                        <h4>JMS Artics</h4>
+                        <span class="timeline-date">Feb, 2026 - Present</span>
+                        <ul>
+                            <li>Developed and deployed <strong>full-stack web applications</strong> using Python, Flask, Django,
+                                MongoDB, and REST APIs.</li>
+                            <li>Built responsive user interfaces using <strong>HTML, CSS, JavaScript, and
+                                    Bootstrap</strong>.</li>
+                            <li>Worked directly with clients to understand requirements and deliver <strong>end-to-end
+                                    web solutions</strong>.</li>
+                            <li>Mentored interns and contributed to <strong>real-world project development and technical
+                                    content creation</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mcube Infotech -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Web Developer</h3>
+                        <h4>Mcube Infotech Private Limited</h4>
+                        <span class="timeline-date">Jan, 2025 - Feb, 2026</span>
+                        <ul>
+                            <li>Managed and maintained the complete backend architecture of web applications using
+                                <strong>Flask & Django</strong>.
+                            </li>
+                            <li>Designed, developed, and configured <strong>RESTful APIs</strong> for seamless
+                                frontend-backend integration.</li>
+                            <li>Handled UI development and ensured responsive, user-friendly interface design.</li>
+                            <li>Took full ownership of end-to-end project development from requirement analysis to
+                                deployment.</li>
+                            <li>Created and delivered web development tutorial videos as a YouTube tutor representing
+                                the company.</li>
+                            <li>Communicated directly with E-commerce clients to gather requirements and provide
+                                technical solutions.</li>
+                            <li>Mentored and trained interns by guiding them through real-time project development and
+                                industry best practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Inmakes Infotech -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Automation Testing Trainee (Paid Internship)</h3>
+                        <h4>Inmakes Infotech Pvt Ltd, Kochi, Kerala</h4>
+                        <span class="timeline-date">Oct, 2023 – Jan, 2024</span>
+                        <ul>
+                            <li>Assisted in developing automation test scripts using Selenium and Core Java.</li>
+                            <li>Worked with testing frameworks such as JUnit, TestNG, Page Object Model (POM), and
+                                Cucumber for structured test automation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freelancing / Projects Section -->
+        <section id="projects" class="projects container">
+            <div class="section-heading fade-up">
+                <h2>Featured Projects</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="project-grid fade-up">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/images/projectImages/pawzoCareImage.png" alt="PawzoCare" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://www.pawzocare.com" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Go to Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PawzoCare</h3>
+                        <p>A modern pet grooming and care platform offering professional services for dogs and cats.
+                            Features include online appointment booking, service selection, and a clean user experience
+                            for pet owners. Built to enhance trust and convenience for local pet care services.</p>
+                        <!-- <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/images/projectImages/kgfImage.png" alt="KGF Photo Frames" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://kgfphotoframes.in" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Go to Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>KGF Photo Frames</h3>
+                        <p>A custom photo frame booking platform designed for both retail and wholesale customers. Users
+                            can personalize frames online with live preview and easy ordering. The system also supports
+                            ID card printing services, bulk frame production, and integrates solutions for frame cutting
+                            machines — making it a complete digital solution for photo frame businesses.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/images/projectImages/naturalElaneerImage.png" alt="Natural Elaneer"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://naturalelanner.in" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Go to Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Natural Elaneer</h3>
+                        <p>A fresh and vibrant e-commerce platform for Natural Elaneer, offering a variety of tender
+                            coconut-based products. Designed with a clean, modern UI and smooth shopping experience, the
+                            website ensures easy product browsing, quick ordering, and mobile-friendly access — helping
+                            the brand deliver natural refreshment to customers effortlessly.</p>
+
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/images/projectImages/auroFitzImage.png" alt="AuroFitz" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://aurofitz.com" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Go to Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AuroFitz</h3>
+                        <p>A stylish e-commerce platform for fashion wear including hoodies, t-shirts, and casual
+                            outfits. Designed with a focus on modern UI, smooth shopping experience, and mobile
+                            optimization — helping the brand showcase and sell apparel with ease.</p>
+
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/images/projectImages/sriDurgaiAcdemy.png" alt="Sri Durgai Academy"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://sridurgaiacademy.in" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Go to Live</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sri Durgai Academy</h3>
+                        <p>A professional educational platform for Sri Durgai Academy, Ambasamudram, offering quality
+                            coaching and skill development programs. Designed with a clean and user-friendly interface,
+                            the website provides easy access to course details, admissions, and updates — helping
+                            students and parents connect with the academy effortlessly.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education container">
+            <div class="section-heading fade-up">
+                <h2>Education & Certifications</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="edu-cert-container fade-up">
+                <div class="edu-box">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu-item">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <h5>Merit Arts and Science College, Idaikal – 627423</h5>
+                        <span class="edu-date">June 2020 – June 2023</span>
+                        <p>Relevant Courses: Object-Oriented Programming, Data Structures and Algorithms, Database
+                            Management Systems, Software Engineering, Web Development.</p>
+                    </div>
+                </div>
+
+                <div class="cert-box">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-award"></i> One Year Experience Certification – Full Stack Web Development
+                            – Mcube Infotech Private Limited (2026).</li>
+                        <li><i class="fas fa-award"></i> Automation Testing Internship Completion – Inmakes Infotech
+                            Private Limited (2024).</li>
+                        <li><i class="fas fa-award"></i> Python Power Hour Workshop – Codegnan (2023).</li>
+                        <li><i class="fas fa-award"></i> Python Basic Quiz Completion – LearnTube.ai (2023).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact container">
+            <div class="section-heading fade-up">
+                <h2>Get In Touch</h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="contact-content fade-up">
+                <p>I'm currently looking for new opportunities to contribute to scalable products. Whether you have a
+                    question or just want to say hi, my inbox is always open!</p>
+
+                <div class="contact-info">
+                    <a href="mailto:shrithis2002@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>shrithis2002@gmail.com</span>
+                    </a>
+                    <a href="tel:+916379481496" class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 6379481496</span>
+                    </a>
+                </div>
+
+
+                <div class="contactForm">
+                    <h4>Do You Have Any Questions?</h4>
+                    <form id="contactForm">
+
+                        <div class="row g-2">
+
+                            <div class="col-12">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your name"
+                                    required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Your email" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="Your Phone" name="phone"
+                                    required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control"
+                                    placeholder="What would you like to discuss?" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control"
+                                    placeholder="Tell me about your project..." required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-outline" id="submitBtn">
+                                    <span id="btnText">Send Message</span>
+                                    <i class="fas fa-paper-plane ms-2" id="btnIcon"></i>
+                                    <span id="btnSpinner" class="spinner-border spinner-border-sm ms-2 d-none"
+                                        role="status"></span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://github.com/ShrithisSurya" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/shrithissurya" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://opencollective.com/shrithis-surya" target="_blank" rel="noopener noreferrer"
+                    aria-label="OpenCollective"><i class="fas fa-users"></i></a>
+
+                <a href="https://www.instagram.com/shri_42__" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>Building high-quality digital experiences with modern web technologies.</p>
+        </div>
+    </footer>
+
+    <!-- iziToast CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+
+    <!-- iziToast -->
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+
+    <!-- iziModal -->
+    <script src="https://cdn.jsdelivr.net/npm/izimodal/js/iziModal.min.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- Initialize EmailJS -->
+    <script>
+        (function () {
+            emailjs.init("uUvgSy5i0-p5LMGCU");
+        })();
+    </script>
+
+    <!-- Your custom utilities -->
+    <script src="/static/js/alertAndModals.js"></script>
+
+    <!-- Your main JavaScript -->
+    <script src="/static/js/script.js"></script>
+
+
+
 </body>
+
 </html>
